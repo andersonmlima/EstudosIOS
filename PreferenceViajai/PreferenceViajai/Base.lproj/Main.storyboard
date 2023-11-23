@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PreferenceViajai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zbt-RE-Yod">
+                                <rect key="frame" x="0.0" y="250" width="393" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preferencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9r-RM-iZF">
+                                <rect key="frame" x="20" y="89" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNE-OJ-5wj">
+                                <rect key="frame" x="20" y="118" width="344" height="61"/>
+                                <string key="text">A partir das suas preferências, iremos sugerir  lugares turísticos que irão permitir que você  aproveite muito mais a sua viagem.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stM-mQ-IYq">
+                                <rect key="frame" x="20" y="199" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exI-MY-qwW">
+                                <rect key="frame" x="20" y="718" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Salvar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGe-Bf-7Mo">
+                                <rect key="frame" x="20" y="761" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Depois"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GNE-OJ-5wj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Yw-4U-h4d"/>
+                            <constraint firstItem="Zbt-RE-Yod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1cY-vY-D0b"/>
+                            <constraint firstItem="exI-MY-qwW" firstAttribute="top" secondItem="Zbt-RE-Yod" secondAttribute="bottom" constant="20" id="1ht-xX-ohC"/>
+                            <constraint firstItem="exI-MY-qwW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5oY-fO-ezJ"/>
+                            <constraint firstItem="stM-mQ-IYq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9kT-nn-AMp"/>
+                            <constraint firstItem="GNE-OJ-5wj" firstAttribute="top" secondItem="B9r-RM-iZF" secondAttribute="bottom" constant="8" id="Aoj-NR-gkt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zbt-RE-Yod" secondAttribute="trailing" id="KY8-cT-oME"/>
+                            <constraint firstItem="Zbt-RE-Yod" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="KuM-eC-MLz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tGe-Bf-7Mo" secondAttribute="trailing" constant="20" id="O2W-bK-3f7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zbt-RE-Yod" secondAttribute="bottom" constant="120" id="XDO-6v-Jlb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="exI-MY-qwW" secondAttribute="trailing" constant="20" id="ZrW-Xt-S0H"/>
+                            <constraint firstItem="exI-MY-qwW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dng-l3-CbJ"/>
+                            <constraint firstItem="B9r-RM-iZF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="egz-QM-6EH"/>
+                            <constraint firstItem="tGe-Bf-7Mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mYu-RA-H4B"/>
+                            <constraint firstItem="tGe-Bf-7Mo" firstAttribute="top" secondItem="exI-MY-qwW" secondAttribute="bottom" constant="8" id="muI-xx-vEO"/>
+                            <constraint firstItem="Zbt-RE-Yod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oBd-ES-RhN"/>
+                            <constraint firstItem="Zbt-RE-Yod" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="191" id="p5Z-4Z-ZEv"/>
+                            <constraint firstItem="B9r-RM-iZF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="t3S-bY-ZJ5"/>
+                            <constraint firstItem="stM-mQ-IYq" firstAttribute="top" secondItem="GNE-OJ-5wj" secondAttribute="bottom" constant="20" id="uZr-Wn-Y98"/>
+                            <constraint firstItem="tGe-Bf-7Mo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yTN-Z3-kLU"/>
+                            <constraint firstItem="Zbt-RE-Yod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zXp-Bq-sYb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="afterButton" destination="tGe-Bf-7Mo" id="TWt-Ff-Q0q"/>
+                        <outlet property="preferenceLabel" destination="B9r-RM-iZF" id="dIv-DW-tWD"/>
+                        <outlet property="saveButton" destination="exI-MY-qwW" id="HO1-iR-xIH"/>
+                        <outlet property="selectPreferenceLabel" destination="stM-mQ-IYq" id="kPH-aY-6Jw"/>
+                        <outlet property="subTitleLabel" destination="GNE-OJ-5wj" id="Xxv-ua-U8b"/>
+                        <outlet property="tableView" destination="Zbt-RE-Yod" id="gFW-ok-yAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
