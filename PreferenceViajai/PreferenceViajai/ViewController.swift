@@ -9,12 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var preferenceLabel: UILabel!
-    @IBOutlet weak var subTitleLabel: UILabel!
-    @IBOutlet weak var selectPreferenceLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var afterButton: UIButton!
+    
     
     let preferences = ["Praia", "Frio", "Natureza", "Museu", "Ecoturismo", "Esportes", "Compras", "Gastronomia", "Esportes"]
     
@@ -25,15 +21,6 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         configElements()
-    }
-    
-    func configElements() {
-        preferenceLabel.font = UIFont.boldSystemFont(ofSize: 26)
-        preferenceLabel.textColor = .black
-        subTitleLabel.font = UIFont.systemFont(ofSize: 16)
-        subTitleLabel.textColor = .systemGray2
-        selectPreferenceLabel.font = UIFont.boldSystemFont(ofSize: 22)
-        selectPreferenceLabel.textColor = .black
     }
     
 }

@@ -10,11 +10,25 @@ import UIKit
 class PreferenceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var preferenceLabel: UILabel!
-    @IBOutlet weak var preferenceSwitch: UISwitch!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var selectLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var afterButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configElements() {
+        preferenceLabel.font = UIFont.boldSystemFont(ofSize: 26)
+        preferenceLabel.textColor = .black
+        subTitleLabel.font = UIFont.systemFont(ofSize: 16)
+        subTitleLabel.textColor = .systemGray2
+        selectLabel.font = UIFont.boldSystemFont(ofSize: 22)
+        selectLabel.textColor = .black
     }
     
     private func configureLayout() {
